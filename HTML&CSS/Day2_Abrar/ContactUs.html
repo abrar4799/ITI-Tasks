@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <table  style="border:1px solid black; width:100%;" >
+            <form method="POST" action="ThankYou.html">
+            <tr>
+             <center> <th colspan="2">Contact Me</th></center>  
+            </tr>
+            <tr>
+                <td> <label for="name"> name:</label></td>
+                
+                <td><input type="text" id="name" ></td>
+            </tr>
+            <tr>
+                <td> <label for="opinion "> opinion:</label></td>
+                
+                <td><input type="text" id="opinion " ></td>
+            </tr>
+            <tr>
+                <td> <label for="Gender "> Gender:</label></td>
+                
+                <td><input type="radio"  name="g" value="male">
+                    <label for="male">male</label><br>
+                    <input type="radio"  name="g" value="female">
+                    <label for="female">female</label><br>
+                  </td>
+            </tr>
+            <tr>
+                <td>Marital status:</td>
+                <td><select id="ms" name="ms">
+                    <option value="single">single</option>
+                    <option value="maried">maried</option>
+                    <option value="other" selected>other</option>
+                    
+                  </select></td>
+            </tr>
+            <tr>
+                <td>You know about my website from:</td>
+                <td><select id="ms" name="ms" multiple>
+                    <option value="internet">internet</option>
+                    <option value="maried">maried</option>
+                    <option value="search " selected>search </option>
+                    <option value="engine " selected>engine </option>
+                    <option value="other " selected>other </option>
+                    
+                  </select></td>
+            </tr>
+            <tr>
+                <td> <label for="mail"> mail:</label></td>
+                
+                <td><input type="text" id="mail" ></td>
+            </tr>
+            <tr>
+                <td> <label for="Subject"> Subject:</label></td>
+                
+                <td><input type="text" id="Subject" ></td>
+            </tr>
+            <tr>
+                <td> <label for="message"> message:</label></td>
+                
+                <td><textarea name="message" rows="10" cols="30"  id="message"></textarea></td>
+            </tr>
+            <tr>
+                 
+                <td colspan="2">
+                    <center>  <input type="submit" value="Submit"></center>
+                    <center>  <input type="reset" value="Reset"></center>
+                </td>
+               </center>  
+               </tr>
+        </form>
+        </table>
+    </body>
+</html>
