@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>CSS3 Fonts</title>
+<meta charset="UTF-8">
+<!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@1,600&family=Playball&display=swap" rel="stylesheet"> -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kalam&display=swap" rel="stylesheet">
+<style>
+   /*Server Font*/ 
+@font-face
+{
+font-family: myOwnFont;
+src: url('ge_ss_two_medium.ttf'),
+     url('ge_ss_two_medium.eot'); /* IE9+ */
+}
+
+/* server Font*/
+#div1
+{
+font-family:"myOwnFont";
+font-size:5em
+}
+
+/* web font*/
+#div2{
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: larger;
+    font-weight: bolder;
+}
+#div3{
+    font-family: 'Kalam', cursive;
+    font-size: x-large;
+}
+
+/*user font*/
+#div4{
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+</style> 
+</head>
+
+<body>
+<br/><br/><br/>
+<div id="div1">فونت عربى جديد</div>
+<div id="div2">Using Web Font (Online Font) </div>
+<div id="div3">Using Web Font </div>
+<div id="div4">Using User Font </div>
+
+</body>
+
+</html> 

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+div
+{
+width:100px;
+height:100px;
+background:red;
+
+
+-moz-transition:width 2s, height 2s, -moz-transform 2s, background 5s; /* Firefox 4 */
+-webkit-transition:width 2s, height 2s, -webkit-transform 5s, background 5s; /* Safari and Chrome */
+-o-transition:width 2s, height 2s, -o-transform 2s, background 5s; /* Opera */
+}
+
+div:hover
+{
+background:blue;
+width:200px;
+height:200px;
+transform:rotate(180deg);
+-moz-transform:rotate(180deg); /* Firefox 4 */
+-webkit-transform:rotate(180deg); /* Safari and Chrome */
+-o-transform:rotate(180deg); /* Opera */
+}
+</style>
+</head>
+<body>
+
+<p><b>Note:</b> This example does not work in Internet Explorer.</p>
+
+<div>Hover over me to see the transition effect!</div>
+
+</body>
+</html>
+

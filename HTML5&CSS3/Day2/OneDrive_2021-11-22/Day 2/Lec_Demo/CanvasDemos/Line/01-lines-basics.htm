@@ -1,0 +1,37 @@
+﻿<!doctype html>
+<html>
+  <head>
+    <title>Drawing Lines - Basics</title>
+    
+    <style>
+      canvas 
+      { 
+          border: 1px solid #ccc; 
+      }
+    </style>
+    <script type="text/javascript">
+        function drwaCav() {
+			var canvas = document.getElementById('drawingSurface');
+			var context = canvas.getContext('2d');
+			context.beginPath();
+			context.moveTo(100, 150);
+			context.lineTo(450, 50);
+			//context.line(100,150,450,50);
+			context.lineWidth = 5;
+			
+
+			// set line color
+			context.strokeStyle = '#ff0000';
+			context.stroke();//to make the line visible, its default is black if strokeStyle not use
+			
+		
+            }
+        
+    </script>
+  </head>
+  <body onload="drwaCav()">
+    <canvas id="drawingSurface" width="600" height="250">
+        <p>Your browser does not support the canvas element.</p>
+    </canvas>
+  </body>
+</html>

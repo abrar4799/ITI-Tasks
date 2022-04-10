@@ -1,0 +1,69 @@
+﻿<!DOCTYPE html>
+<html>
+<head><title> SVG</title></head>
+<body>
+
+<!--
+x="the x-axis top-left corner of the rectangle"
+ y="the y-axis top-left corner of the rectangle"
+ rx="the x-axis radius (to round the element)"
+ ry="the y-axis radius (to round the element)" 
+width="the width of the rectangle". Required.
+ height="the height of the rectangle" Required.
+
+-->
+<style>
+    #SVG1:hover{
+        stroke:aquamarine ;
+        fill: brown;
+    }
+</style>
+
+<svg width="400" height="400" >
+    <circle cx="100" cy="100" r="60" stroke="green" stroke-width="3" fill="yellow" id="SVG1"/>
+    Sorry, your browser does not support inline SVG.
+ </svg> 
+ 
+    <svg width="200" height="200">
+        <rect
+        x="0" y="0"
+        width="100" height="100"
+        fill="blue" stroke="red"
+        stroke-width="5px"
+        rx="20" ry="20"
+        id="myRect" class="chart" />
+		
+		<rect
+        x="150" y="150"
+        width="33" height="33"
+        fill="blue" stroke="red"
+        stroke-width="5px" />
+
+    </svg>
+
+
+    <script type="text/javascript" language="javascript">
+        var rect = document.getElementById('myRect');
+
+        rect.onclick = function () { alert('hello'); rect.style.fill = 'green'; }
+
+
+        var CircleSVG= document.getElementById("SVG1");
+        CircleSVG.onmouseover=function(){
+            CircleSVG.style.fill="blue";
+            CircleSVG.style.stroke="red";
+
+        }
+        CircleSVG.onmouseout=function(){
+            CircleSVG.style.fill="Yellow";
+            CircleSVG.style.stroke="black";
+        }
+        CircleSVG.onclick=function(){
+            CircleSVG.style.fill="Red";
+            CircleSVG.style.stroke="Grey";
+        }
+
+       
+</script>
+</body>
+</html>

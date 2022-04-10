@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <button  id="getLocationButton">Get Location</button>
+        <label for="lat">Latitude:</label>
+        <input type="text" id="lat" name="lat"/>
+        <label for="long" >longitude</label>
+        <input type="text" id="long" name="long"/>
+
+        <div>
+            <a href="javascript:void(0);" id="mapLink" target="_blank">View Map</a> 
+        </div>
+
+
+
+        <script>
+            document.getElementById("getLocationButton").onclick = function(){
+                navigator.geolocation.getCurrentPosition(showPos);
+            }
+            function showPos(position){
+                document.getElementById("lat").value = position.coords.latitude ; 
+                document.getElementById("long").value = position.coords.longitude ; 
+
+
+            } 
+
+            document.getElementById("mapLink").onclick = function(){
+                this.href="http://maps.google.com/maps?q="+ document.getElementById("lat").value + ",+" +
+            document.getElementById("long").value ;
+            }
+        </script>
+
+    </body>
+</html>

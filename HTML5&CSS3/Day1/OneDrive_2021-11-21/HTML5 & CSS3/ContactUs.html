@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <form>
+            <fieldset>
+                <legend>Contact Us</legend>
+                <div>
+                    <label>Title: </label>
+                    <input list="title-list">
+                    <datalist id="title-list">
+                        <option value="Mr"></option>
+                        <option value="Dr"></option>
+                        <option value="Eng"></option>
+
+                    </datalist>
+                </div>
+                <div>
+                   <label>Enter your name: </label>
+                   <input type="text" required  />
+               </div>
+               <div>
+                   <label>Telephone</label>
+                   <input type="tel"  pattern="[0-9]{3}-[0-9]{4}-[0-9]{4}" required placeholder="010-4567-7896"/>
+               </div>
+               <div>
+                   <label>Email</label>
+                   <input type="email"/>
+               </div>
+               <div>
+                   <label for="eval">Evaluate your website from 1 to 10:</label>
+                   <input type="range" id="eval" min="0" max="10"/>
+               </div>
+               <div>
+                   <input type="submit">
+               </div>
+            </fieldset>
+        </form>
+    </body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>CSS3 Borders</title>
+<style>
+div
+{
+background-color:rgb(224, 223, 223);
+text-align:center;
+width: 70%
+}
+
+#divRadius
+{
+border:5px solid;
+border-radius:50px;
+-moz-border-radius:50px; /* Old Firefox */
+} 
+
+#divShadow
+{
+box-shadow: 10px 10px 10px 5px rgb(138, 92, 92) ;
+} 
+
+#divBorderImage
+{
+
+    border: 15px solid transparent;
+    padding: 15px;
+    border-image-source: url(border.png);
+    border-image-repeat: round;
+    border-image-slice: 30;
+} 
+</style>
+</head>
+
+<body>
+<br/><br/><br/>
+<div id="divRadius">div Radius</div>
+<br/><br/><br/>
+<div id="divShadow">div Shadow</div>
+<br/><br/><br/>
+<div id="divBorderImage">div Border Image</div>
+</body>
+
+</html> 
